@@ -24,7 +24,6 @@ public class Job {
     private String qulification;
     private int companyMoblie;
     private String jobMode;
-    private String jobName;
     private double income;
     private String jobEmail;
     private String jobType;
@@ -70,14 +69,6 @@ public class Job {
 
     public void setJobMode(String jobMode) {
         this.jobMode = jobMode;
-    }
-
-    public String getJobName() {
-        return jobName;
-    }
-
-    public void setJobName(String jobName) {
-        this.jobName = jobName;
     }
 
     public double getIncome() {
