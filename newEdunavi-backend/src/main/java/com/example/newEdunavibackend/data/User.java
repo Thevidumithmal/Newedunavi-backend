@@ -23,7 +23,7 @@ public class User {
     private String name;
     private String userName;
     private String password;
-    private int insRegisterNo;
+    private String insRegisterNo;
 
     public int getId() {
         return id;
@@ -57,13 +57,15 @@ public class User {
         this.password = password;
     }
 
-    public int getInstituteNo() {
-        return instituteNo;
+    public String getInsRegisterNo() {
+        return insRegisterNo;
     }
 
-    public void setInstituteNo(int instituteNo) {
-        this.instituteNo = instituteNo;
+    public void setInsRegisterNo(String insRegisterNo) {
+        this.insRegisterNo = insRegisterNo;
     }
+
+
     
     
 
