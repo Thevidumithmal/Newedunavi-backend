@@ -23,7 +23,7 @@ public class User {
     private String name;
     private String userName;
     private String password;
-    private int instituteNo;
+    private int insRegisterNo;
 
     public int getId() {
         return id;
