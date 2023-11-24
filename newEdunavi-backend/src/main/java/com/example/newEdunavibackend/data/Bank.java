@@ -28,6 +28,7 @@ public class Bank {
     private String requirement;
     private String mobileNo;
     private String website;
+    private String bankLogo;
 
     public int getId() {
         return id;
@@ -101,5 +102,15 @@ public class Bank {
     public void setWebsite(String website) {
         this.website = website;
     }
+
+    public String getBankLogo() {
+        return bankLogo;
+    }
+
+    public void setBankLogo(String bankLogo) {
+        this.bankLogo = bankLogo;
+    }
+    
+    
 
 }
