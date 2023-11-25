@@ -19,11 +19,13 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
+
     private String name;
     private String userName;
     private String password;
     private String insRegisterNo;
+    private int mobileNo;
+    private String email;
 
     public int getId() {
         return id;
@@ -65,8 +67,21 @@ public class User {
         this.insRegisterNo = insRegisterNo;
     }
 
+    public int getMobileNo() {
+        return mobileNo;
+    }
 
-    
+    public void setMobileNo(int mobileNo) {
+        this.mobileNo = mobileNo;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
     
 
 }

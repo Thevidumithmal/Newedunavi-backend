@@ -19,21 +19,21 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    
+    private String instituteName;
     private String courseName;
-    private String image;
+    private String courseImage;
     private String awardedUni;
-    private String duration;
-    private String overallIdea;
+    private String awardedUniImage;
+    private String worldRanking;
+    private String relatedIndustry;
     private String programmeType;
+    private String programmeTime;
+    private String programme;
     private String entryRequirement;
-    private String category;
-    private String commencement;
-    private String educationalRequirement;
-    private String courseModule;
+    private String courseStructure;
     private String fees;
-    private String ugcRecognize;
-    private String date;
-    private String industry;
+    private String commencement;
     private int insId;
 
     public int getId() {
@@ -44,6 +44,14 @@ public class Course {
         this.id = id;
     }
 
+    public String getInstituteName() {
+        return instituteName;
+    }
+
+    public void setInstituteName(String instituteName) {
+        this.instituteName = instituteName;
+    }
+
     public String getCourseName() {
         return courseName;
     }
@@ -52,14 +60,12 @@ public class Course {
         this.courseName = courseName;
     }
 
-  
-
-    public String getImage() {
-        return image;
+    public String getCourseImage() {
+        return courseImage;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setCourseImage(String courseImage) {
+        this.courseImage = courseImage;
     }
 
     public String getAwardedUni() {
@@ -70,20 +76,28 @@ public class Course {
         this.awardedUni = awardedUni;
     }
 
-    public String getDuration() {
-        return duration;
+    public String getAwardedUniImage() {
+        return awardedUniImage;
     }
 
-    public void setDuration(String duration) {
-        this.duration = duration;
+    public void setAwardedUniImage(String awardedUniImage) {
+        this.awardedUniImage = awardedUniImage;
     }
 
-    public String getOverallIdea() {
-        return overallIdea;
+    public String getWorldRanking() {
+        return worldRanking;
     }
 
-    public void setOverallIdea(String overallIdea) {
-        this.overallIdea = overallIdea;
+    public void setWorldRanking(String worldRanking) {
+        this.worldRanking = worldRanking;
+    }
+
+    public String getRelatedIndustry() {
+        return relatedIndustry;
+    }
+
+    public void setRelatedIndustry(String relatedIndustry) {
+        this.relatedIndustry = relatedIndustry;
     }
 
     public String getProgrammeType() {
@@ -94,6 +108,22 @@ public class Course {
         this.programmeType = programmeType;
     }
 
+    public String getProgrammeTime() {
+        return programmeTime;
+    }
+
+    public void setProgrammeTime(String programmeTime) {
+        this.programmeTime = programmeTime;
+    }
+
+    public String getProgramme() {
+        return programme;
+    }
+
+    public void setProgramme(String programme) {
+        this.programme = programme;
+    }
+
     public String getEntryRequirement() {
         return entryRequirement;
     }
@@ -102,36 +132,12 @@ public class Course {
         this.entryRequirement = entryRequirement;
     }
 
-    public String getCategory() {
-        return category;
+    public String getCourseStructure() {
+        return courseStructure;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public String getCommencement() {
-        return commencement;
-    }
-
-    public void setCommencement(String commencement) {
-        this.commencement = commencement;
-    }
-
-    public String getEducationalRequirement() {
-        return educationalRequirement;
-    }
-
-    public void setEducationalRequirement(String educationalRequirement) {
-        this.educationalRequirement = educationalRequirement;
-    }
-
-    public String getCourseModule() {
-        return courseModule;
-    }
-
-    public void setCourseModule(String courseModule) {
-        this.courseModule = courseModule;
+    public void setCourseStructure(String courseStructure) {
+        this.courseStructure = courseStructure;
     }
 
     public String getFees() {
@@ -142,28 +148,12 @@ public class Course {
         this.fees = fees;
     }
 
-    public String getUgcRecognize() {
-        return ugcRecognize;
+    public String getCommencement() {
+        return commencement;
     }
 
-    public void setUgcRecognize(String ugcRecognize) {
-        this.ugcRecognize = ugcRecognize;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public String getIndustry() {
-        return industry;
-    }
-
-    public void setIndustry(String industry) {
-        this.industry = industry;
+    public void setCommencement(String commencement) {
+        this.commencement = commencement;
     }
 
     public int getInsId() {
@@ -173,10 +163,6 @@ public class Course {
     public void setInsId(int insId) {
         this.insId = insId;
     }
-    
-    
-    
-    
-    
 
+    
 }

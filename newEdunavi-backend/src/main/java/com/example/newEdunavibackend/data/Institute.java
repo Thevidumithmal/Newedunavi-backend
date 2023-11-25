@@ -15,21 +15,20 @@ import javax.persistence.Id;
  */
 @Entity
 public class Institute {
-    
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String insName;
-    private String insRank;
     private String insImage;
-    private String overallIdea;
+    private String overview;
     private String startDate;
     private String location;
     private int insMobile;
     private String insEmail;
     private String insWebsite;
+    private int recommendedBankNo;
     private String insRegisterNo;
 
     public int getId() {
@@ -48,14 +47,6 @@ public class Institute {
         this.insName = insName;
     }
 
-    public String getInsRank() {
-        return insRank;
-    }
-
-    public void setInsRank(String insRank) {
-        this.insRank = insRank;
-    }
-
     public String getInsImage() {
         return insImage;
     }
@@ -64,12 +55,12 @@ public class Institute {
         this.insImage = insImage;
     }
 
-    public String getOverallIdea() {
-        return overallIdea;
+    public String getOverview() {
+        return overview;
     }
 
-    public void setOverallIdea(String overallIdea) {
-        this.overallIdea = overallIdea;
+    public void setOverview(String overview) {
+        this.overview = overview;
     }
 
     public String getStartDate() {
@@ -112,6 +103,14 @@ public class Institute {
         this.insWebsite = insWebsite;
     }
 
+    public int getRecommendedBankNo() {
+        return recommendedBankNo;
+    }
+
+    public void setRecommendedBankNo(int recommendedBankNo) {
+        this.recommendedBankNo = recommendedBankNo;
+    }
+
     public String getInsRegisterNo() {
         return insRegisterNo;
     }
@@ -119,7 +118,5 @@ public class Institute {
     public void setInsRegisterNo(String insRegisterNo) {
         this.insRegisterNo = insRegisterNo;
     }
-    
-    
-    
+
 }
